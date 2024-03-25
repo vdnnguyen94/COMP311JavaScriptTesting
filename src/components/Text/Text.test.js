@@ -20,7 +20,7 @@ describe("Text Component", () => {
 
 	// Test 2
 	test("Displayed Text when toggle is set to true", () => {
-		render(<Text toggle={true} displayTxt={"Hello Testers"} />)
+		render(<Text toggle={true} displayTxt={"Hello Tester"} />)
 		const text = screen.getByTestId("text");
 		expect(text).toHaveTextContent("Hello Testers");
 	})
