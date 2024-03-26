@@ -16,11 +16,12 @@ return (
     <div className="App">
       <Header />
       <div className="content">
+        <h2>Use Case: Testing Button and Text Components</h2>
         <Button setToggle={setToggle} btnTxt="Toggle Text" />
-        <Text toggle={toggle} displayTxt="JavaScript Testing" />
+        <Text toggle={toggle} displayTxt="JavaScript Unit Testing" />
       </div>
       <div >
-        <h2>Use case: Hotel Room Reservation Testing</h2>
+        <h2>Use case: Hotel Room Reservation Lifecycle Testing</h2>
         <p data-testid="room-status"> <strong> Room Status:</strong> {status}</p>
         {status === 'Available' && <button data-testid="reserve-button" onClick={handleReserve}>Reserve</button>}
         {status === 'Reserved' && (

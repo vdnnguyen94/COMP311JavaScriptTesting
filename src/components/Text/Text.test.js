@@ -16,16 +16,10 @@ describe("Text Component", () => {
 		render(<Text toggle={true} displayTxt={"Hello Testers"} />);
 		const text = screen.getByTestId("text");
 		expect(text).toBeInTheDocument();
-	})
-
-	// Test 2
-	test("Displayed Text when toggle is set to true", () => {
-		render(<Text toggle={true} displayTxt={"Hello Tester"} />)
-		const text = screen.getByTestId("text");
 		expect(text).toHaveTextContent("Hello Testers");
 	})
 
-	// Test 3
+	// Test 2
 	test("Displayed Text when toggle is set to false", () => {
 		render(<Text toggle={false} displayTxt={"Hello Testers"} />);
 		const text = screen.getByTestId("text");

@@ -7,7 +7,6 @@ import App from "./App";
 afterEach(() => {
 	cleanup();
 })
-
 describe("App Component", () => {
 
 	// Test 1: Expect text and button elements in the browser
@@ -18,14 +17,12 @@ describe("App Component", () => {
 		expect(button).toBeInTheDocument();
 		expect(text).toBeInTheDocument();
 	})
-
 	// Test 2: Expect the Text to have JavaScript Unit Testing
 	test("Default Text", () => {
 		render(<App />);
 		const text = screen.getByTestId("text");
 		expect(text).toHaveTextContent("JavaScript Unit Testing");
 	})
-
 	// Test 3: Verify Room is Initially Available and Reserve Button Functionality
 	test("Room is initially Available and can be Reserved", () => {
 		render(<App />);
@@ -35,7 +32,6 @@ describe("App Component", () => {
 		fireEvent.click(reserveButton);
 		expect(status).toHaveTextContent("Reserved");
 	})
-
 	// Test 4: Verify Reservation Lifecycle (Reserve, Check-In, Cancel, and Check-Out)
 	test("Reservation Lifecycle", () => {
 		render(<App />);
