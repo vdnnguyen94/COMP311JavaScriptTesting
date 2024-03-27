@@ -32,7 +32,7 @@ describe("App Component", () => {
 		fireEvent.click(reserveButton);
 		expect(status).toHaveTextContent("Reserved");
 	})
-	// Test 4: Verify Reservation Lifecycle (Reserve, Check-In, Cancel, and Check-Out)
+	// Test 4: Verify Reservation Lifecycle (Reserve, Check-In, Cancel, & Check-Out)
 	test("Reservation Lifecycle", () => {
 		render(<App />);
 		// Reserve
