@@ -37,4 +37,5 @@ return (
  );
 }
 
+    //export details
 export default App;
